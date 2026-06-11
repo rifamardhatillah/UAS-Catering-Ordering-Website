@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+body{
+    background-color: rgb(204, 204, 204);
+}
+.section1{
+	position: relative;
+	top: -20px;
+    display: flex;
+    background-color: white;
+    height: 90px;
+	margin-top: 0;
+}
+.section1 .logo{
+    position: relative;
+    top: 20px;
+    left: 70px;
+}
+.section1 .logo .logo-text{
+    position: relative;
+    font-size: 20px;
+    left: 14px;
+    top: 15px;
+}
+.logout{
+	position: relative;
+	top: 10px;
+	left: 1300px;
+}
+.logout i{
+	position: relative;
+	top: 30px;
+	right: 15px;	
+}
+.logout button{
+	z-index: 12;
+	position: relative;
+	top: 6px;
+	right: 30px;
+	background: transparent;
+	height: 23px;
+	width: 23px;
+	border: none;
+	cursor: pointer;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    background-color: slategrey ;
+    border-radius: 25px;
+}
+.section2 {
+    display: flex;
+}
+.section2 div{
+    position: relative;
+    top: 70px;
+    left: 40px;
+    margin: 50px 20px 0px 0px;
+    padding: 30px 0px 0px 30px;
+    background-color: white;
+    height: 110px ;
+    width: 170px;
+    border-radius: 15px;
+}
+.section2 .title{
+    position: relative;
+    top: 40px;
+    left: 250px;
+    font-size: 40px;
+}
+.section2 .total-order{
+    border-top: 20px sandybrown solid;
+}
+.section2 .total-view{
+    border-top: 20px steelblue solid;
+}
+.section2 .total-money{
+    border-top: 20px greenyellow solid;
+}
+
+
+
+.table-data {
+	border-radius: 15px ;
+	border-top: 15px darkolivegreen solid;
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 24px;
+	margin-top: 140px;
+	margin-left: 260px;
+	width: 100%;
+	color: var(--dark);
+	background-color: white;
+	width: 1000px;
+	margin-bottom: 90px;
+}
+ .table-data > div {
+	border-radius: 20px;
+	background: var(--light);
+	padding: 24px;
+	overflow-x: auto;
+}
+ .table-data .head {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+	margin-bottom: 24px;
+}
+ .table-data .head h3 {
+	margin-right: auto;
+	font-size: 24px;
+	font-weight: 600;
+}
+ .table-data .head .bx {
+	cursor: pointer;
+}
+
+ .table-data .order {
+	flex-grow: 1;
+	flex-basis: 500px;
+}
+ .table-data .order table {
+	width: 100%;
+	border-collapse: collapse;
+}
+ .table-data .order table th {
+	padding-bottom: 12px;
+	font-size: 20px;
+	text-align: left;
+	border-bottom: 1px solid var(--grey);
+}
+ .table-data .order table td {
+	padding: 16px 0;
+}
+ .table-data .order table tr td:first-child {
+	display: flex;
+	align-items: center;
+	grid-gap: 12px;
+	padding-left: 6px;
+}
+ .table-data .order table td img {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+ .table-data .order table tbody tr:hover {
+	background: var(--grey);
+}
+ .table-data .order table tr td .status {
+	font-size: 15px;
+	padding: 6px 16px;
+	color: var(--light);
+	border-radius: 20px;
+	font-weight: 700;
+}
+ .table-data .order table tr td .status.completed {
+	background: #508D4E;
+}
+ .table-data .order table tr td .status.process {
+	background: #3FA2F6;;
+}
+ .table-data .order table tr td .status.pending {
+	background: #E68369;
+}
+
+
+ .table-data .todo {
+	flex-grow: 1;
+	flex-basis: 300px;
+}
+ .table-data .todo .todo-list {
+	width: 100%;
+}
+ .table-data .todo .todo-list li {
+	width: 100%;
+	margin-bottom: 16px;
+	background: var(--grey);
+	border-radius: 10px;
+	padding: 14px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+ .table-data .todo .todo-list li .bx {
+	cursor: pointer;
+}
+ .table-data .todo .todo-list li.completed {
+	border-left: 10px solid var(--blue);
+}
+ .table-data .todo .todo-list li.not-completed {
+	border-left: 10px solid var(--orange);
+}
+ .table-data .todo .todo-list li:last-child {
+	margin-bottom: 0;
+}
+

@@ -1,0 +1,260 @@
+*{
+    margin:0; /* ruang kosong yang mengelilingi elemen HTML*/
+    padding:0; /*ruang di antara batas elemen HTML dan kontennya*/
+    font-family: "Plus Jakarta Sans", sans-serif;/*menentukan jenis font */
+}
+html {
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .5rem;
+    height: 10px;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #bb2828;
+    border-radius: 4rem;
+}
+.header {
+    min-height: 100vh; /*mengatur minimal tinggi dari sebuah obyek*/
+    width: 100%;/*mengatur lebar atau tebal*/
+    background-image: url(image/bgHome.jpg);/* untuk menambahkan gambar latar belakang pada elemen HTML*/
+    background-position: center;/*menentukan gambar latar belakang harus diposisikan dalam suatu elemen*/
+    background-size:cover ;/*mengatur ukuran gambar pada background*/
+    position: relative;/*mengatur ulang posisi suatu elemen dari posisi normalnya*/
+}
+
+nav{
+    display: flex;/*mengatur tata letak*/
+    padding: 2% 6%;/*ruang di antara batas elemen HTML dan kontennya*/
+    justify-content:center;/*letak item akan didistribusikan secara merata*/
+    align-items: center; /*mengatur posisi item di dalam flexbox*/
+
+}
+
+nav img{
+    width:80px ;/*mengatur lebar atau tebal*/
+    /*margin-left: 300px; ini saya tambain margin agar logo jadi ke tengah*/
+}
+
+.nav-links{
+    flex:1; /* pengaturan layout, posisi dan tampilan dari suatu konten yang ukurannya belum diketahui*/
+    text-align: right;/*mengatur posisi paragraf*/
+    display: flex ; /*agar home, blog, contag berada di kiri*/
+}
+
+.nav-links ul li{
+    list-style: none; /*untuk menghapus list style bawaan*/
+    display: inline-block;/*memungkinkan elemen untuk diletakkan sejajar dengan elemen lain (seperti inline), namun tetap bisa mengatur lebar dan tinggi */
+    padding: 8px 12px;/*ruang di antara batas elemen HTML dan kontennya*/
+    position: relative ;/*mengatur ulang posisi suatu elemen dari posisi normalnya*/
+}
+
+.nav-links ul li a{
+    color: #ffffff; /*untuk memberikan warna*/
+    text-decoration:none ;/*tidak menggunakan dekorasi */
+    font-size:13px;/*mengatur ukuran dari font*/
+    font-weight: bold;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;/*mengatur lebar atau tebal*/
+    height: 2px;/*mengatur tinggi*/
+    background: #efeb04;/*mewarnai bg*/
+    display: block;
+    margin: auto;/* ruang kosong yang mengelilingi elemen HTML*/
+    transition: 0.5s;/*melakukan perubahan visual elemen web secara smooth dan terkontrol*/
+}
+
+.nav-links ul li:hover::after{
+    width: 100%; /*lebar atau tebal*/
+}
+/*--------------------------------------------text box------------------------------------------------*/
+
+.text-box{
+    width: 90%;/*lebar atau tebal*/
+    color: #fff;/*memberi warna*/
+    position: absolute;/*menempatkan elemen pada posisi tertentu di dalam kontainer terdekat atau jendela browser*/
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%) ;/*memindahkan posisi element*/
+    text-align: left;/*mengatur posisi paragraf dan button agar di kiriiii*/
+}
+
+.text-box h2{
+    font-size: 50px;/*mengatur ukuran dari font*/
+    color: hsl(63, 79%, 64%);/*memberi warna*/
+}
+
+.text-box p{
+    margin: 10px 0 40px;/* ruang kosong yang mengelilingi elemen HTML*/
+    font-size: 16px;/*mengatur ukuran dari font*/
+    color: #f4eeee;/*memberi warna*/
+}
+
+/*--------------------------------bagian order now-------------------------------- */
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.hero-btn:hover{
+    border: 1px solid #b4f143;
+    background: #f8cf04;
+    transition: 1s;
+}
+
+/* -----------------------------blogs-------------------------------------------------*/
+.main{
+    display: flex;/*mengatur tata letak*/
+    margin: 5%;  /* ruang kosong yang mengelilingi elemen HTML*/
+}
+.main img {
+/*border: solid 5px #f8cf04;/*Memberikan border pada element dengan tipe garis solid (tidak putus2)*/
+    border-radius: 100%;/* bentuk sudut elemen HTML jadi melengkung*/
+    width: 20%;/*mengatur lebar atau tebal*/
+    
+}
+.main-cont{
+    padding-left: 2%;/*mengatur jarak padding di sisi kiri elemen*/
+    padding-top: 1%;/*mengatur jarak padding di sisi atas elemen*/
+}
+.main h1{
+    font-weight: 900;/*mengubah ketebalan sebuah teks*/
+    font-size: 250%;/*mengatur ukuran dari font*/
+    color: #bb2828;/*memberi warna*/
+    padding-top: 5%;
+}
+.main p{
+    font-size: 100%;/*mengatur ukuran dari font*/
+    
+}
+
+/*---------------------testimonials------*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 25%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #a03232;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col:hover{
+    transform:translate(0px,-20px) ;
+    transition: 0.5s;
+}
+.testimonial-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonial-col p{
+    padding: 0;
+    color: #ffffff;
+}
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+    color: #ffffff;
+}
+.testimonial-col .fa{
+    color:rgb(255, 247, 0)
+}
+
+.row{
+    margin-top: 5%;/*mengatur jarak di bagian atas elemen*/
+    display:flex ;/*mengatur tata letak*/
+    justify-content: space-between;/*letak item akan didistribusikan secara merata*/
+    
+}
+
+/*   -------------------contact------------------------------*/
+
+
+.map{
+    width: auto;/*mengatur lebar atau tebal*/
+}
+.map iframe{
+    width: 100%;/*mengatur lebar atau tebal*/
+}
+
+.contact{
+    width:auto;/*mengatur lebar atau tebal*/
+    margin: auto;/* ruang kosong yang mengelilingi elemen HTML*/
+    display: flex;/*mengatur tata letak*/
+    justify-content: center;
+    background-color: #fff;/*memberikan warna pada background*/
+}
+.contact-form,.contact-info{
+    width: 100%;/*mengatur lebar atau tebal*/
+    padding: 25px;/*ruang di antara batas elemen HTML dan kontennya*/
+}
+label{
+    color: #222;/*memberi warna*/
+    font-size: 17px;/*mengatur ukuran dari font*/
+    display: block;
+    margin-top: 12px;/*mengatur jarak di bagian atas elemen*/
+    margin-bottom: 5px;/*mengatur jarak di bagian bawah elemen*/
+}
+
+form input,form textarea{
+    width: 100%;/*mengatur lebar atau tebal*/
+    padding: 12px;/*ruang di antara batas elemen HTML dan kontennya*/
+    border-radius: 5px;/*mengubah bentuk sudut elemen HTML jadi melengkung*/
+    border: none;
+    outline: none;
+    background-color: #e9e61c;/*memberikan warna pada background*/
+}
+
+form button{
+    font-size: 17px;/*mengatur ukuran dari font*/
+    background-color: #ff0404;/*memberikan warna pada background*/
+    color: #f5f5f5;/*memberi warna*/
+    border: none;
+    border-radius: 5px;/*mengubah bentuk sudut elemen HTML jadi melengkung*/
+    padding: 10px 20px;/*ruang di antara batas elemen HTML dan kontennya*/
+    margin-top: 15px;/*mengatur jarak di bagian atas elemen*/
+}
+
+form button:hover{
+    cursor: pointer;/*membuat elemen button menjadi pointer ketika di hover*/
+}
+.contact-info p {
+    color: black; /*memberi warna*/
+}
+
+.contact-info td{
+    padding: 3px 7px 3px 0px;
+}
+ /*----------------footer------------*/
+footer {
+    background-color: #bb2828;/*memberikan warna pada background*/
+    color: white;/*memberi warna*/
+    text-align: center;/*mengatur posisi paragraf*/
+    height: 50px;/*mengatur tinggi*/
+    padding: 50px 0px;/*ruang di antara batas elemen HTML dan kontennya*/
+}
+  
+#sosmed a{
+    margin-right: 10px;/*mengatur jarak di bagian kanan elemen*/
+}

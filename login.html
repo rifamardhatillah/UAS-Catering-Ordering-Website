@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css"> <!--ini gunakan untuk manggil ccs loginnya-->
+    <link rel="icon" href="image/logo.png">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class=" form">
+                <h1>Login</h1>
+                <hr>
+                <p>only admin can access</p>
+                <label for="">Email</label>
+                <input type="text"id="username"
+                placeholder="Username">
+                <label for="">Password</label>
+                <input type="password" id="password"
+                placeholder="Password">
+                <button id="login-button">Login</button>
+                <div id = "error-message"
+                class="error-message">
+                </div>
+            </div>
+        </div>
+        <script>
+            document.getElementById('login-button').addEventListener('click', function() {
+                var username = document.getElementById('username').value.toUpperCase(); // Mengambil nilai dari input username dan mengubahnya menjadi huruf besar
+                var password = document.getElementById('password').value.toUpperCase(); // Mengambil nilai dari input password dan mengubahnya menjadi huruf besar
+                var errorMessage = document.getElementById('error-message');
+    
+                // Mendefinisikan array username dan password yang benar
+                var validCredentials = [
+                    { username: "ADMIN1", password: "123" },
+                    { username: "ADMIN2", password: "123" },
+                    { username: "ADMIN3", password: "123" }
+                ];
+    
+                // Memeriksa apakah username dan password cocok
+                var isValid = validCredentials.some(function(credential) {
+                    return credential.username === username && credential.password === password;
+                });
+    
+                if (isValid) {
+                    window.location.href = './admin.html'; // Jika sesuai, pengguna akan diarahkan ke halaman html
+                } else {
+                    errorMessage.textContent = "Username atau password salah"; // Jika salah, tampilkan pesan kesalahan
+            }
+        });
+        </script>   
+        <div class="right">
+            <img src="image/animasi tumpeng.jpg" >
+        </div>
+    </div>
+</body>
+</html>

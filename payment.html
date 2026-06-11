@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>PEMBAYARAN</title>
+    <link rel="icon" href="image/logo.png">
+</head>
+<body>
+    <div class="container">
+        <div class="gambar">
+            <img src="./image/bgHome.jpg" alt="" width="100%">
+        </div>
+        <div class="section1">
+            <h1><b>PEMBAYARAN </b></h1>
+            <form onsubmit="return goToFinish(event)">
+                <label for="name">Nama Lengkap</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="address">Alamat</label><br>
+                <textarea name="address" id="address"></textarea><br>
+                <input type="radio" name="payment_type" id="cash" required>
+                <label for="#cash">Tunai</label><br>
+                <input type="radio" name="payment_type" id="credit" required>
+                <label for="#credit">Kredit</label><br>
+                <br>
+                <label for="#card">Nama dalam Kartu (jika Credit)</label><br>
+                <input type="text" id="card"><br>
+                <label for="#credit_card">Masukkan Nomor Rekening Kartu (jika Credit)</label><br>
+                <input type="text" id="credit_card"><br><br>
+                <button onclick="return backToOrder()">Kembali</button>
+                <button type="submit">Lanjut</button>
+            </form>
+        </div> 
+    </div>
+    <script src="./payment.js">
+        
+    </script>
+</body>
+</html>

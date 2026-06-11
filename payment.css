@@ -1,0 +1,105 @@
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;/*menentukan jenis font */;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+html::-webkit-scrollbar{
+    width: .5rem;
+    height: 10px;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #bb2828;
+    border-radius: 4rem;
+}
+.container{
+    height: 100px;
+    background-color: #bb2828; 
+}
+.section1 label{
+    font-size: 17px;
+}
+.section1{
+    padding: 20px;
+    z-index: 2;
+    background: transparent;
+    width: 800px;
+    height: 700px;
+    margin: 10px 0px 0px 20px;
+    position: relative;
+    top: -800px;
+    left: 40px;
+    color: white;
+}
+.section1 h1{
+    font-weight: bold;
+}
+.section1 #name{
+    margin: 10px 0px 10px 0px;
+    border-bottom: 1px white solid;
+    border-top: none;
+    border-left: none ;
+    border-right:none ;
+    color: white;
+    width: 300px;
+    height: 30px;
+    background: transparent;
+}
+.section1 #email{
+    margin: 10px 0px 10px 0px;
+    border-bottom: 1px white solid;
+    border-top: none;
+    border-left: none ;
+    border-right:none ;
+    color: white;
+    background: transparent;
+    width: 300px;
+    height: 30px;
+}
+.section1 #cash{
+    cursor: pointer;
+}
+.section1 #credit{
+    cursor: pointer;
+}
+.section1 #address{
+    margin: 10px 0px 10px 0px;
+    border: none;
+    width: 300px;
+    height: 100px;
+}
+.section1 #card{
+    margin: 10px 0px 10px 0px;
+    border-bottom: 1px white solid;
+    border-top: none;
+    border-left: none ;
+    border-right:none ;
+    color: white;
+    background: transparent;
+    width: 300px;
+    height: 30px;
+}
+.section1 #credit_card{
+    margin: 10px 0px 10px 0px;
+    border-bottom: 1px white solid;
+    border-top: none;
+    border-left: none ;
+    border-right:none ;
+    color: white;
+    background: transparent;
+    width: 300px;
+    height: 30px;
+}
+.section1 button{
+    width: 120px;
+    height: 40px; 
+    background: #f8cf04;
+    border: none;
+    color: rgb(23, 23, 23);
+    cursor: pointer;
+    margin-right: 60px;
+    font-weight: 600;
+}
